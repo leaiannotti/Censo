@@ -1,0 +1,13 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+    <style name="popupSubtitulos">
+        <item name="android:gravity">left</item>
+       	<item name="android:textColor">@android:color/black</item>
+       	<item name="android:textStyle">bold</item>
+       	<item name="android:textSize">15px</item>
+    </style>
+    
+    
+</resources>

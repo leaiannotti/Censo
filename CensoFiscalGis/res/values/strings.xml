@@ -1,0 +1,52 @@
+<resources>
+
+    <string name="app_name">CensoFiscalGis</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="busqueda_parcelas">Búsqueda de parcelas</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_login">Censo FiscalGis</string>
+    <string name="usuario">Usuario</string>
+    <string name="contrasenia">Contraseña</string>
+    <string name="acceder">Acceder</string>
+    <string name="registrese">¿Aún no tiene cuenta? Registrese</string>
+    <string name="olvidoPass"></string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="repetirContrasenia">Repita la contraseña</string>
+    <string name="email">E-mail</string>
+    <string name="registarse">Registrarse</string>
+    <string name="probarDB">Chequear Base</string>
+    <string name="buscar">Buscar</string>
+    <string name="parcela">Parc.</string>
+    <string name="categorias">Categorías</string>
+    <string name="calle">Calle</string>
+    <string name="altura">Altura</string>
+    <string name="actividad">Actividad</string>
+    <string name="guardar">Guardar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="nomenclatura">Nomenclatura</string>
+    <string name="circunscripcion">Circunscripción</string>
+    <string name="seccion">Sección</string>
+    <string name="manzana">Manzana</string>
+    <string name="agregarParcela">Agregar parcela</string>
+    <string name="nroParcela">Nro Parcela</string>
+    <string name="tomarFoto">Tomar foto</string>
+    <string name="viviendaUni">Vivienda Unifamiliar</string>
+    <string name="viviendaMulti">Vivienda Multifamiliar</string>
+    <string name="viviendaComercio">Comercio}</string>
+    <string name="comercio">Comercio</string>
+    <string name="industria">Industria</string>
+    <string name="baldio">Baldio</string>
+    <string name="obraConst">Obra en construccion</string>
+    <string name="seleccionarActividad">Seleccionar actividades</string>
+    <string name="fromSelectedAct"><![CDATA[<--]]></string>
+    <string name="toSelectedAct"><![CDATA[-->]]></string>
+    <string-array name="circuns">
+        <item>I</item>
+        <item>II</item>
+        
+    </string-array>
+        <string name="textview">TextView</string>
+    
+
+</resources>

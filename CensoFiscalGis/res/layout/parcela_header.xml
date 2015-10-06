@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Tabla"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1" >
+ 
+    <TableRow
+        android:id="@+id/Cabecera"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        
+	    <TextView  android:id="@+id/parcelaHeader"
+	        android:layout_width="101dp"
+	        android:background="@android:color/holo_purple"
+	        android:layout_height="wrap_content"
+	        android:textStyle="bold"
+	        android:gravity="center_vertical|center_horizontal"
+	        android:layout_marginLeft="150dp"
+	        android:text="@string/parcela"/>
+	    
+	    <TextView  android:id="@+id/calleHeader"
+	        android:background="@android:color/holo_orange_dark"
+	        android:gravity="center_vertical|center_horizontal"
+	        android:layout_width="201dp"
+	        android:layout_height="wrap_content"
+	        android:textStyle="bold"
+	        android:text="@string/calle"/>
+	    
+	    <TextView  android:id="@+id/alturaHeader"
+	        android:gravity="center_vertical|center_horizontal"
+	        android:background="@android:color/darker_gray"
+	        android:layout_width="101dp"
+	        android:layout_height="wrap_content"
+	        android:textStyle="bold"
+	        android:text="@string/altura"/>
+	    
+	    <TextView  android:id="@+id/categoriaHeader"
+	        android:gravity="center_vertical|center_horizontal"
+	        android:background="@android:color/holo_green_light"
+	        android:layout_width="201dp"
+	        android:layout_height="wrap_content"
+	        android:textStyle="bold"
+	        android:text="@string/categorias"/>
+	    
+	    <TextView  android:id="@+id/actividadHeader"
+	        android:gravity="center_vertical|center_horizontal"
+	        android:background="@android:color/holo_purple"
+	        android:layout_width="201dp"
+	        android:layout_height="wrap_content"
+	        android:textStyle="bold"
+	        android:text="@string/actividad"/>
+    
+
+	</TableRow>
+</TableLayout>

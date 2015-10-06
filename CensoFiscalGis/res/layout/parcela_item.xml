@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:showDividers="middle|beginning|end"
+    android:divider="@android:drawable/divider_horizontal_dim_dark" >
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="horizontal" >
+    
+    <ImageButton android:id="@+id/eliminarImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/ic_parc_delete"
+       	style="?android:attr/borderlessButtonStyle"
+        />
+    
+    <View
+		 android:layout_width="1dp"
+		 android:layout_height="match_parent"
+		 android:background="@android:color/black" />
+        
+    <ImageButton android:id="@+id/modificarImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/ic_parc_edit"
+        style="?android:attr/borderlessButtonStyle"
+        />
+    
+    <View
+	 android:layout_width="1dp"
+	 android:layout_height="match_parent"
+	 android:background="@android:color/black" />
+    
+    <TextView android:id ="@+id/nroParcGrid"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:maxLines="1"/>
+    
+    <View
+	 android:layout_width="1dp"
+	 android:layout_height="match_parent"
+	 android:background="@android:color/black" />
+    
+    <Spinner android:id ="@+id/calleGrid"
+        android:layout_width="200dp"
+        android:maxLines="3"
+        android:layout_height="wrap_content"
+        android:padding="10dp"/>
+    
+    <View
+	 android:layout_width="1dp"
+	 android:layout_height="match_parent"
+	 android:background="@android:color/black" />
+    
+    <TextView android:id ="@+id/alturaGrid"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"/>
+    
+    <View
+	 android:layout_width="1dp"
+	 android:layout_height="match_parent"
+	 android:background="@android:color/black" />
+    
+    <Spinner android:id ="@+id/categoriaGrid"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"/>
+    
+    <View
+	 android:layout_width="1dp"
+	 android:layout_height="match_parent"
+	 android:background="@android:color/black" />
+    
+    <Spinner android:id ="@+id/actividadGrid"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"/>
+
+</LinearLayout>
+
+	    <View
+		 android:layout_width="match_parent"
+		 android:layout_height="1dp"
+		 android:background="@android:color/black" />
+	    
+  </LinearLayout>

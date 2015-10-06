@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@android:color/white"
+    >
+	
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id= "@+id/rlNomenclatura"
+	    android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="20dp" android:background="@drawable/stroke"
+        android:orientation="vertical" android:padding="10dp"
+		android:layout_centerHorizontal="true">
+	
+        <TextView android:id="@+id/circunsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface="sans"
+            android:layout_marginTop="15dp"
+            android:textSize="8pt"
+            android:layout_marginLeft="200dp"
+            android:text="@string/circunscripcion"/>
+        
+	    <Spinner android:id="@+id/circSpinner"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="0dp"
+			android:spinnerMode="dropdown"
+			android:layout_marginRight="15dp"
+			android:layout_marginLeft="7dp"
+			android:layout_toRightOf="@id/circunsText"
+			android:layout_centerHorizontal="true"
+			style="@android:style/TextAppearance.DeviceDefault.Widget.DropDownItem"/>
+	    
+	    <TextView android:id="@+id/seccionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/circSpinner" 
+            android:textSize="8pt"
+            android:typeface="sans"
+            android:layout_marginTop="15dp"
+			android:layout_centerHorizontal="true"
+            android:text="@string/seccion"/>
+	    
+	    
+	  	<Spinner android:id="@+id/seccSpinner"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/seccionText"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="0dp"
+			android:layout_marginLeft="7dp"
+			android:spinnerMode="dropdown"
+			android:layout_marginRight="15dp"
+			style="@android:style/TextAppearance.DeviceDefault.Widget.DropDownItem"/>    		
+	   
+	  	<TextView android:id="@+id/manzanaText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="8pt"
+            android:typeface="sans"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/seccSpinner"
+            android:layout_centerHorizontal="true"
+            android:text="@string/manzana"/>
+	  	
+	  	 <Spinner android:id="@+id/manzSpinner"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/manzanaText"
+			android:layout_centerHorizontal="true"
+			android:layout_marginLeft="7dp"
+			android:layout_marginTop="0dp"
+			android:spinnerMode="dropdown"
+			style="@android:style/TextAppearance.DeviceDefault.Widget.DropDownItem"/> 
+	  	
+	  	 
+	  	 <Button android:id="@+id/agregarParcela"
+	  	     android:layout_width="wrap_content"
+	  	     android:layout_height="wrap_content"
+	  	     android:layout_marginLeft="100dp"
+	  	     android:text="@string/agregarParcela"
+	  	     android:layout_toRightOf="@id/manzSpinner"
+	  	     />
+	  	
+  	</RelativeLayout>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:background="@android:color/white" android:padding="5dp"
+        android:text="@string/nomenclatura"
+        android:textStyle="bold|italic" android:typeface="sans"
+        android:textSize="9pt" android:textAllCaps="true"
+        android:layout_marginTop = "0dp"
+        android:layout_marginLeft="30dp" android:textColor="@android:color/black" />
+    
+    
+    
+		<com.censoMain.customControlls.CustomDatagrid
+			android:layout_below="@id/rlNomenclatura"
+			android:layout_marginTop="30dp"
+			android:id="@+id/grid"
+			android:layout_height="fill_parent" 
+			android:layout_width="fill_parent"/>
+	
+	
+</RelativeLayout>

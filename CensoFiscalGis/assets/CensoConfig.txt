@@ -1,0 +1,3 @@
+NroTablet :5
+RutaWebService :http://192.168.2.106/CensoWS/Service.asmx
+NombreMetodo :RecibirDatosParcela

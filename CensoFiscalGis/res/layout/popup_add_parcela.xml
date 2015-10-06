@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <TextView android:id= "@+id/nomenclaturaTextHeaderAdd"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:layout_marginTop="17dp"
+   	    style="@style/popupSubtitulos"
+        android:layout_alignParentBottom="true"
+   	    android:text="@string/nroParcela"/>
+
+
+    <View android:id = "@+id/separadorNomAddParcela"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        />
+        
+   	<EditText android:id="@+id/nroParcelaAdd"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:inputType="text"
+   	    android:hint="@string/parcela"/>
+
+
+   	<TextView android:id= "@+id/calleTextHeaderAdd"
+	   	    android:layout_width="wrap_content"
+	   	    android:layout_height="wrap_content"
+	   	    android:layout_marginTop="15dp" 
+	   	    android:text="@string/calle"
+	   	    style="@style/popupSubtitulos"/>
+   	
+   	<View android:id = "@+id/separadorCalleAdd"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        />
+   	
+   	<LinearLayout android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+
+        <Spinner
+                android:id="@+id/cmbCalles"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                />
+	   	
+	   	<EditText android:id="@+id/alturaAdd"
+	   	    android:layout_width="wrap_content"
+	   	    android:gravity="right"
+	   	    android:layout_height="wrap_content"
+	   	    android:hint="@string/altura"
+	   	    android:inputType="number" />
+
+        <Button android:id="@+id/tomarFotoButton"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_height="wrap_content"
+                android:text="@string/tomarFoto"
+                android:textSize="15sp"/>
+   	
+   	</LinearLayout>
+   	
+   	<TextView android:id= "@+id/categoriaTextHeaderAdd"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:layout_marginTop="15dp" 
+   	    style="@style/popupSubtitulos"
+   	    android:text="@string/categorias"/>
+   	
+   	<View android:id = "@+id/separadorCatAdd"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        />
+
+    <TableLayout android:id="@+id/tableCategs"
+                 android:layout_height="wrap_content"
+                 android:layout_width="match_parent">
+
+        <TableRow android:id="@+id/trcateg1"
+                  android:layout_height="wrap_content"
+                  android:layout_width="match_parent">
+
+            <CheckBox android:id="@+id/chkCategViviUni"
+                      android:text="@string/viviendaUni"
+                      android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                    />
+
+            <CheckBox android:id="@+id/chkCategViviMulti"
+                      android:text="@string/viviendaMulti"
+                      android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                    />
+
+        </TableRow>
+
+        <TableRow android:id="@+id/trcateg2"
+                  android:layout_height="wrap_content"
+                  android:layout_width="match_parent">
+
+
+            <LinearLayout android:id="@+id/layoutComercio"
+                          android:orientation="horizontal"
+                          android:layout_height="wrap_content"
+                          android:layout_width="match_parent"
+                    >
+
+                <CheckBox android:id="@+id/chkCategComercio"
+                          android:text="@string/comercio"
+                          android:layout_height="wrap_content"
+                          android:layout_width="wrap_content"
+                        />
+
+                <EditText android:id="@+id/txtCategComercio"
+                          android:layout_height="wrap_content"
+                          android:layout_width="50dp"
+                          android:inputType="number"
+                        />
+
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/layoutIndustria"
+                          android:orientation="horizontal"
+                          android:layout_height="wrap_content"
+                          android:layout_width="match_parent"
+                    >
+
+                <CheckBox android:id="@+id/chkCategIndustria"
+                          android:text="@string/industria"
+                          android:layout_height="wrap_content"
+                          android:layout_width="wrap_content"
+                        />
+
+                <EditText android:id="@+id/txtCategIndustria"
+                          android:layout_height="wrap_content"
+                          android:layout_width="50dp"
+                          android:inputType="number"
+                        />
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow android:id="@+id/trcateg3"
+                  android:layout_height="wrap_content"
+                  android:layout_width="match_parent">
+
+
+            <CheckBox android:id="@+id/chkCategBaldio"
+                      android:text="@string/baldio"
+                      android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                    />
+
+            <CheckBox android:id="@+id/chkCategObraConst"
+                      android:text="@string/obraConst"
+                      android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                    />
+
+        </TableRow>
+
+    </TableLayout>
+  	
+  	<TextView android:id= "@+id/actividadTextHeaderAdd"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:layout_marginTop="15dp" 
+   	    style="@style/popupSubtitulos"
+   	    android:text="@string/actividad"/>
+  	
+  	<View android:id = "@+id/separadorActAdd"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        />
+  	
+   	<!--Spinner android:id="@+id/spinnerActividadAdd"
+   	    android:layout_width="fill_parent"
+   	    android:layout_height="wrap_content"
+   	    android:spinnerMode="dropdown"
+   	    /-->
+
+    <Button android:id="@+id/btnActividades"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seleccionarActividad"
+            android:textSize="15sp"
+            />
+   
+    <RelativeLayout 
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="5dp"
+        >
+        <Button android:id="@+id/guardarParcelaButtonAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            style="@drawable/stroke"
+            android:text="@string/guardar"
+            android:textSize="15sp"/>
+        
+        <Button android:id="@+id/cancelarParcelaButtonAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/guardarParcelaButtonAdd"
+            style="@drawable/stroke"
+            android:text="@string/cancelar"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+    
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <EditText
+        android:id="@+id/userText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/usuario" />
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userText"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:layout_margin="10dp"
+        android:inputType="textPassword"
+        android:hint="@string/contrasenia" />
+	
+    <Button 
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordText"
+        android:layout_centerHorizontal="true"
+        style="?android:attr/borderlessButtonStyle"
+        android:ems="5"
+        android:padding="1dp"
+        android:text="@string/acceder"
+        />
+    
+    
+    <TextView 
+        android:autoLink="all"
+        android:id="@+id/olvidoPassText"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/olvidoPass"
+        />
+
+    <TextView
+        android:id="@+id/versionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/userText"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/userText"
+        android:layout_marginBottom="18dp"/>
+    
+</RelativeLayout>
